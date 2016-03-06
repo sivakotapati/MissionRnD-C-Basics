@@ -12,9 +12,9 @@ ERROR CASES: Return -1 in error cases.
 NOTES:
 */
 int count(int num1, int num2) {
+	//returns count of numbers between num1...num2 that are divisible by num1
 	int i,c=0;
-	if (num1 > num2) return -1;
-	if (num1==0) 
+	if (num1 == 0) return -1;//a number divide by zero is not defined
 	for (i = num1; i <= num2; i++){
 		if ((i%num1) == 0){
 			++c;
