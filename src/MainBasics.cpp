@@ -29,11 +29,11 @@ int main(){
 	//Test Count file
 	
 	int countTemp = count(5, 20);
-	printf("%d\n", countTemp);
+	printf("no.of numbers divisible by num1  %d\n", countTemp);
 
 
 	//Test Swap
-	int a = 5, b = 7;
+	int a =5, b = 7;
 	swap(&a, &b);
 	printf("%d %d\n", a, b);
 
