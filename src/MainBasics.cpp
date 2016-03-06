@@ -24,7 +24,7 @@ int main(){
 	//Test Sum of numbers
 	
 	int sumTemp = sum(4, 3);
-	printf("%d\n", sumTemp);
+	printf("sumis :%d\n", sumTemp);
 	
 	//Test Count file
 	
