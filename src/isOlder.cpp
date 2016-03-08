@@ -66,6 +66,8 @@ int isOlder(char *dob1, char *dob2) {
 	}
 	return -1;
 }
+
+//checking for vaild date or not
 int isValid(int d, int m, int y){
 	if (m == 2 && isLeap(y) && d<30) return 1;
 	else if (m == 2 && !isLeap(y) && d<29) return 1;
