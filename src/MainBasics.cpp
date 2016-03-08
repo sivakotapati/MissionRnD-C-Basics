@@ -17,7 +17,6 @@ Points to Follow for the whole C course :
 //Do not Edit below Header Files
 #include <stdio.h>
 #include "FunctionHeadersBasics.h"
-
 int main(){
 
 	
