@@ -14,8 +14,18 @@ ERROR CASES:
 
 NOTES: 		use stdarg.h header.
 */
-
+#include<stdarg.h>
 int variableArguments(int arg_count, ...)
-{
-	return 0;
+{     
+	int i, count = 0;
+	va_list ap;//creating va_list type variable
+	va_start(ap, arg_count);//initializing valist i.e ap list for arg_count no.of arguments
+	for (i = arg_count; i > 0;i--){
+		if (va_arg(ap, int) > 90){//accessing all elements assigned to valist i.e,ap list
+			count++;
+		}
+	} 
+	va_end(ap);//cleaning memory reserved for valist i.e., ap list
+	return count;
+  	return 0;
 }
